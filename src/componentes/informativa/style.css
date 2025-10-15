@@ -1,0 +1,78 @@
+/* src/componentes/informativa/Informativa.css */
+
+.informativa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Título vibrante con gradiente */
+.informativa h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Autor en color neón */
+.autor {
+  font-size: 1rem;
+  color: #ff6b6b; /* Rosa neón */
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(255, 107, 107, 0.4);
+}
+
+.icono {
+  margin: 1.5rem 0;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.icono-img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info-box {
+  background: #333;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.info-box p {
+  margin: 0.5rem 0;
+}
+
+.info-box p:first-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
